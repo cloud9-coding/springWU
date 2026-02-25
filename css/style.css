@@ -1,0 +1,48 @@
+body{
+    grid-template-columns: 100vw; 
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas:    
+    'hd'
+    'mn';
+    
+    height: 100vh;   
+}
+
+@font-face {
+    font-family: sigma;
+    src: url(/font/royale-couture-sans.otf);
+}
+
+#name{
+    justify-content: center;
+    color: white;
+    font-family: sigma;
+    font-size: 20em;
+    display: flex;
+    background-color: transparent;
+    width: 90vw;
+    margin-left: 4vw;
+    margin-top: 320px;
+    z-index: 1;
+    height: 35vh;
+    backdrop-filter: blur(3.5px);
+}
+
+header{
+    grid-area: hd;
+    height: 10vh;
+    background-color: transparent   ;
+}
+
+main{
+    background-image: url(../img/dji_fly_20260217_171620_0138_1771346871456_photo\ \(1\).png    );
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    z-index: 0;
+    grid-area: mn;
+    height: 90vh;
+    background-color: brown;
+
+}
