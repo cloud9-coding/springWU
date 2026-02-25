@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     grid-template-columns: 100vw; 
     grid-template-rows: 10vh 90vh;
     grid-template-areas:    
@@ -13,36 +14,79 @@ body{
     src: url(/font/royale-couture-sans.otf);
 }
 
-#name{
-    justify-content: center;
-    color: white;
-    font-family: sigma;
-    font-size: 20em;
-    display: flex;
-    background-color: transparent;
-    width: 90vw;
-    margin-left: 4vw;
-    margin-top: 320px;
-    z-index: 1;
-    height: 35vh;
-    backdrop-filter: blur(3.5px);
+@font-face{
+
+    font-family: smegma;
+    src: url(/font/Moonscape\ Demo.otf);
 }
 
+#pic{
+
+    background-image: url(/img/Cirkle.jpg);
+    background-repeat: none;
+    background-size: cover;
+    position: fixed;
+    color: transparent;
+    bottom: 20px;
+    right: 40px;
+    width: 600px;
+    height: 700px;
+}
+
+#menu{
+    display: flex;  
+    backdrop-filter: blur(10px);
+    justify-content: space-around;
+    width: 72vw;
+    background-color: rgba(255, 255, 255, 0.47);
+    height: 50px;
+    color: grey;
+    font-family: sigma;
+    font-size: 5em;
+    z-index: 100;
+
+    margin-top: 300px;
+}
+
+#bottom{
+    background-color: red;
+    width: 400px;
+    height: 600px;
+    transform: rotate(270deg);
+    position:absolute;
+    left: 100px;
+    bottom: 150px;
+    z-index: 0;
+    color: transparent;
+
+
+}
+a{
+
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    z-index: 1000;
+    margin-top: -5px;
+    font-family: smegma;
+
+}
 header{
     grid-area: hd;
     height: 10vh;
-    background-color: transparent   ;
+    background-color: #dfdacf   ;
 }
 
 main{
-    background-image: url(../img/dji_fly_20260217_171620_0138_1771346871456_photo\ \(1\).png    );
     background-repeat: none;
     background-size:cover;
     background-position: center;
+    background-color: #dfdacf;
     display: flex;
     z-index: 0;
     grid-area: mn;
     height: 90vh;
-    background-color: brown;
 
 }
