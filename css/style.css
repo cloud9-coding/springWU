@@ -5,6 +5,9 @@ body{
     grid-template-areas:    
     'hd'
     'mn';
+    background-size: cover;
+    background-image: url(/img/b928b1b4-7b1d-43ba-a9b5-c30bd5d01487.png);
+
     
     height: 100vh;   
 }
@@ -20,7 +23,23 @@ body{
     src: url(/font/Moonscape\ Demo.otf);
 }
 
+@font-face{
+
+    font-family: jojo;
+    src: url(/font/Concourse\ Regular.otf);
+    
+    
+
+}   
+
+@font-face{
+    font-family: h;
+    src: url(/font/GC\ Chief\ Ranced\ Demo.ttf);
+
+}
+
 #pic{
+
 
     background-image: url(/img/Cirkle.jpg);
     background-repeat: none;
@@ -31,6 +50,7 @@ body{
     right: 40px;
     width: 600px;
     height: 700px;
+    z-index: 1;
 }
 
 #menu{
@@ -40,8 +60,8 @@ body{
     width: 72vw;
     background-color: rgba(255, 255, 255, 0.47);
     height: 50px;
-    color: grey;
-    font-family: sigma;
+    color: rgb(195, 187, 187);
+    font-family: smega;
     font-size: 5em;
     z-index: 100;
 
@@ -61,29 +81,62 @@ body{
 
 
 }
+
+#age{
+    color: (195, 187, 187);
+   font-family: sigma;
+   font-size: 1.5em;
+   position: absolute;
+   right: 40px;
+   top: 20px;
+
+}
+
+#logo{
+    display: flex;
+    align-items: center;    
+    font-weight: 0;
+    color: rgb(195, 187, 187);
+    font-family: h ;
+    font-weight: 900;
+    font-size: 2.5em;
+    width: 900px;
+    margin-top: 20px;
+    background-color: transparent;
+    margin-left: 50%;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+
+
 a{
 
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 h3{
     z-index: 1000;
     margin-top: -5px;
     font-family: smegma;
+    
 
 }
 header{
+    display: flex;
     grid-area: hd;
     height: 10vh;
-    background-color: #dfdacf   ;
+    background-color: transparent;
+    align-items: center;
+    color: rgb(195, 187, 187);
+    justify-content: center;
 }
 
 main{
     background-repeat: none;
     background-size:cover;
     background-position: center;
-    background-color: #dfdacf;
     display: flex;
     z-index: 0;
     grid-area: mn;
