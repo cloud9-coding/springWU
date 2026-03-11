@@ -1,0 +1,147 @@
+body{
+    grid-template-columns: 100vw; 
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:    
+    'hd'
+    'mn'
+    'ft';
+  
+    height: 100vh;   
+}
+
+#redbox{
+
+    background-color: red;
+    width: 400px;
+    height: 600px;
+    transform: rotate(270deg);
+    position:absolute;
+    left: 100px;
+    bottom: 150px;
+    z-index: 0;
+    color:transparent;
+    padding: 30px;
+
+}
+#pic1{
+
+    background-color: orange;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    position: absolute;
+    right: 80%;
+    top: 30%;
+
+}
+
+#pic2{
+
+    background-color: blue;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    top: 35%;
+    right: 61%;
+    position: absolute;
+
+}
+
+#pic3{
+
+    background-color: aqua;
+    height: 340px;
+    width: 230px;
+    position: absolute;
+    display: flex;
+    top: 38%;
+    right: 50%;
+}
+
+#pic4{
+
+    background-color: black;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+    top: 20%;
+    right: 25%;
+}
+
+#pic4:hover{
+
+    z-index: 1000;
+    
+}
+
+#pic5{
+
+    background-color: aquamarine;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 20%;
+}
+
+#pic6{
+
+    background-color: yellow;
+    height: 250px;
+    width: 150px ;
+    position: absolute;
+    display: flex;
+    top: 30%;
+    right:16%  
+}
+
+#pic7{
+
+    background-color: cadetblue;
+    height: 270px;
+    width: 190px;
+    position: absolute;
+    display: flex;
+    top: 10%;
+    right: 8%;
+}
+
+#pic8{
+
+    background-color: beige;
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 3%;
+}
+
+#pic9{
+
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    top: 28.5%;
+    right: 0.5%;
+}
+
+
+
+
+main{
+     height: 90vh;
+    grid-area: mn;
+    background-color: white;
+
+}
+
+footer{
+    height: 10vh;
+    grid-area: ft;
+    background-color: yellowgreen;
+}

@@ -40,7 +40,6 @@ body{
 
 #pic{
 
-
     background-image: url(/img/Cirkle.jpg);
     background-repeat: none;
     background-size: cover;
@@ -77,9 +76,20 @@ body{
     left: 100px;
     bottom: 150px;
     z-index: 0;
-    color: transparent;
+    color:transparent;
+    padding: 30px;
 
 
+}
+
+#log{
+
+    scale: 0.3;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 55%;
+    right: 75%;
+    z-index: 10000;
 }
 
 #age{
@@ -87,25 +97,21 @@ body{
    font-family: sigma;
    font-size: 1.5em;
    position: absolute;
-   right: 40px;
+   left: 47%;
    top: 20px;
 
 }
 
 #logo{
     display: flex;
-    align-items: center;    
-    font-weight: 0;
-    color: rgb(195, 187, 187);
-    font-family: h ;
+    color:black;
+    font-family: smega ;
     font-weight: 900;
     font-size: 2.5em;
-    width: 900px;
-    margin-top: 20px;
-    background-color: transparent;
-    margin-left: 50%;
-    justify-content: center;
-    backdrop-filter: blur(10px);
+    opacity: 0.5;
+    position: absolute;
+    bottom: 85%;
+    right: 72.5%;
 }
 
 
@@ -130,7 +136,6 @@ header{
     background-color: transparent;
     align-items: center;
     color: rgb(195, 187, 187);
-    justify-content: center;
 }
 
 main{
